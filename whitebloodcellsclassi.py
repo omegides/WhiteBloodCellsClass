@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat May 19 22:29:35 2018
 
-@author: omegi
-"""
 import matplotlib.image as im
 import numpy as np
 import pandas as pd
@@ -101,11 +96,7 @@ def extract_features_for_clustering(images = []):
 
 def Train(images = []):
     model = None
-    # place your code here
-    # in this function you need to read the image files from the list of file names
-    # these images may be either png or jpg
-    # you then build a clustering model - this model is returned for later use
-    #
+
     fileNames = []
     images_file = []
     for filename in images:
@@ -127,10 +118,7 @@ def Train(images = []):
 
 def Test(model,images = []):
     cluster_ids = []
-    # place your code here
-    # in this function you will need to read the images from the list file names
-    # you then apply the model to the images and return it to the caller as a list of cluster ids
-    
+
     fileNames = []
     images_file = []
     for filename in images:
